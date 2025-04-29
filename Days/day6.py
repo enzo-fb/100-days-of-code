@@ -15,4 +15,3 @@ def set_valor_x_global(x):
         global VALOR_X
         VALOR_X = x
         print(f"Global VALOR_X: {VALOR_X}")
-

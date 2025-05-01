@@ -25,26 +25,36 @@ print("Diferença dos conjuntos:", diferenca_conjunto)
 print("Elementos do conjunto:")
 for elemento in conjunto:
     print(elemento)
-    
-dados = {'nome':'Pedro', 'idade':23}
 
-for chave in dados.values():
-    print(chave)
-    
+# Trabalhando com dicionários
+dados = {'nome': 'Pedro', 'idade': 23}
+
+# Iterando sobre os valores do dicionário
+print("Valores do dicionário:")
+for valor in dados.values():
+    print(valor)
+
+# Iterando sobre as chaves do dicionário
+print("Chaves do dicionário:")
 for chave in dados.keys():
     print(chave)
-    
-for chave in dados.items():
-    print(chave)
-    
-print(dados.get('nome'))
-print(dados.get('idade'))
 
+# Iterando sobre os itens do dicionário
+print("Itens do dicionário:")
+for item in dados.items():
+    print(item)
+
+# Acessando valores específicos
+print("Nome:", dados.get('nome'))
+print("Idade:", dados.get('idade'))
+
+# Atualizando o dicionário
 dados.update({'idade': 25})
-print(dados)
-             
+print("Dicionário atualizado:", dados)
+
+# Removendo elementos do dicionário
 del dados["idade"]
-print(dados)
+print("Após remover 'idade':", dados)
 
 dados.pop('nome')
-print(dados)
+print("Após remover 'nome':", dados)

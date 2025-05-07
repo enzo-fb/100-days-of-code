@@ -9,5 +9,5 @@ def verificaPalindromo(palavra):
     return False
    
     
-x = str(input("Digite uma palavra: "))    
+x = str(input("Digite uma palavra para verificar se tal é um palíndromo: "))    
 print(verificaPalindromo(x))
